@@ -1,0 +1,63 @@
+
+
+/* The Sbout Section */
+
+.about-img img{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width:700px) {
+    .menu-front,.a-front{
+       grid-template-columns: 1fr;
+    }
+}
+
+
+/* About */
+.a-grid{
+    display: grid;
+    gap: 1.7rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "I1 I2"
+    "I1 I3"
+    ;
+}
+
+.I-1{
+    grid-area: I1;
+}
+.I-2{
+    grid-area: I2;
+}
+.I-3{
+    grid-area: I3;
+}
+
+
+.a-grid img{
+    height: 100%;
+   width: 100%;
+}
+
+@media screen and (max-width:900px) {
+    .a-main{
+        margin-left: 50%;
+        transform: translateX(-50%);
+        width: 95%;
+    }
+}
+        
+.c-form input,textarea{
+    margin-top: 40px;
+    width: 100%;
+}
+
+.c-form input{
+    height: 70px;
+}
+
+.c-form textarea{
+height: 200px;
+}
+
